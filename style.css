@@ -1,3 +1,37 @@
 body {
     background-color: #B5CAB7;
 }
+
+.scroller {
+    height: 100vh;
+    width: 100%;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    scroll-snap-align: start;
+}
+
+.scroller:nth-child(1) {
+    background-image: url(https://tessere.com/wp-content/uploads/2024/03/stars-in-dark-night-sky.jpg);
+}
+
+.scroller:nth-child(2) {
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQToxPECXnbAeFdwVI17RxOXrEySH76jkz14Er_HOwD_yb8jb7jyx22SpiV&s=10);
+}
+
+.scroller:nth-child(3) {
+    background-image: url(https://www.sciencedaily.com/images/1920/MUSE-View-of-Sculptor-Galaxy.webp);
+}
+
+.content {
+    color: #ffffff;
+    text-align: center;
+    padding: 50px;
+}
+
+.content h1 {
+    font-size: clamp(2rem, 5vw, 6rem);
+}
